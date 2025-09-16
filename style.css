@@ -166,6 +166,13 @@ section.how-it-works .how-it-works__title {
     margin-bottom: 25px;
 
 }
+
 .how-it-works__block--three {
     padding: 0;
+}
+
+section.what-will-you-get {
+    background: linear-gradient(to bottom right,
+            #ffffff 0%,
+            #E3F0FF 100%);
 }
