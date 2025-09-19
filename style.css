@@ -2,21 +2,56 @@ body {
     padding: 0;
     margin: 0;
     min-height: 100vh;
-    background: radial-gradient(circle,
-            rgba(0, 122, 255, 0.3) 0%,
-            /* #007AFF з прозорістю 30% */
-            rgba(0, 122, 255, 0.6) 90%,
-            /* #007AFF з прозорістю 60% */
-            rgba(0, 73, 153, 1) 100%
-            /* #004999 без прозорості */
-        );
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 122, 255, 0.3) 0%,
+    rgba(0, 122, 255, 0.6) 90%
+  );
 }
 
-header.hero {
+header {
+    background: url(./images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+}
+
+.bg-dark {
+    background-color: #00000000 !important;
+}
+
+.navbar {
+ position: fixed;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    max-width: 1150px;
+    width: 100%;         /* чтобы работало ограничение */
+    height: 90px;
+    
+    padding: 0 22px;
+    border-radius: 50px;
+    
+    z-index: 1000;       
+}
+
+.img-header {
+    width: 462px !important;
+    height: 365px;
+}
+
+.container {
+    padding-top: 180px;
+}
+.container-main-how-it-works {
+    width: 1150px;
+}
+/* header.hero {
     width: 360px;
     height: 415px;
     background: url(./images/bg2.png);
-    /* background-size: 100% contain; */
     background-repeat: no-repeat;
 }
 
@@ -77,7 +112,6 @@ div.hero-content p {
 div.buttons {
     display: flex;
     gap: 10px;
-    /* justify-content: center; */
 }
 
 .btn {
@@ -97,10 +131,8 @@ div.buttons {
     text-decoration: none;
     line-height: 10px;
 }
+/*  */
 
-.btn a {
-    /* width: 60px; */
-}
 
 section.how-it-works {
     width: 360px;
@@ -120,9 +152,6 @@ section.how-it-works .how-it-works__title {
     margin-bottom: 8px;
 }
 
-/* .how-it-works__blocks {
-    width: 188px;
-} */
 .how-it-works__block {
     padding-bottom: 25px;
 }
@@ -132,24 +161,21 @@ section.how-it-works .how-it-works__title {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* padding: 1rem; */
 }
 
 .how-it-works__block img {
     max-width: 80px;
-    /* margin-bottom: 1rem; */
-}
+} 
 
-.how-it-works__block h3 {
+ .how-it-works__block h3 {
     font-size: 15px;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     line-height: 12px;
-    /* margin-bottom: 25px; */
     text-align: center;
-}
-
+} 
+ 
 .how-it-works__block p {
     width: 100%;
     display: flex;
@@ -219,4 +245,4 @@ section.what-will-you-get {
         "YTLC" 500;
     line-height: 12px;
     margin-bottom: 8px;
-}
+} 
