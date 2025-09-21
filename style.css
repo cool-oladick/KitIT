@@ -24,7 +24,7 @@ header {
     top: 45px;
     left: 50%;
     transform: translateX(-50%);
-
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     max-width: 1150px;
     width: 100%;
     /* чтобы работало ограничение */
@@ -69,6 +69,7 @@ header {
 .container-main-how-it-works {
     width: 1150px;
 }
+
 #width-header {
     width: 540px;
 }
@@ -97,8 +98,20 @@ header {
     padding-bottom: 24px;
 }
 
+#buttons-header {
+    width: 555px;
+}
+
 #btn-header {
-    width: 500px;
+    width: 280px;
+    font-size: 15px;
+    font-family: "Nunito", sans-serif;
+}
+
+#btn-header:hover {
+    background: #004a99b8;
+    color: rgba(255, 255, 255, 0.8);
+
 }
 
 .how-it-works__blocks {
@@ -158,15 +171,6 @@ section.how-it-works .how-it-works__title {
     max-width: 80px;
 }
 
-.how-it-works__block h3 {
-    font-size: 15px;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    line-height: 12px;
-    text-align: center;
-}
-
 .how-it-works__block p {
     width: 100%;
     display: flex;
@@ -185,9 +189,25 @@ section.how-it-works .how-it-works__title {
 
 }
 
-.how-it-works__block--three {
-    padding: 0;
+.how-it-works__block h3 {
+    font-size: 24px;
+    font-family: "Nunito", sans-serif;
+    line-height: 30px;
 }
+
+.how-it-works__block p {
+    width: 160px;
+    font-size: 15px;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 20px;
+    font-weight: light;
+}
+
+.how-it-works__block--two h3 {
+    width: 160px;
+}
+
+
 
 
 .what-will-you-get__title {
@@ -195,12 +215,8 @@ section.how-it-works .how-it-works__title {
     display: flex;
     justify-content: center;
     padding-top: 22px;
-    font-size: 20px;
+    font-size: 40px;
     font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    line-height: 12px;
-    margin-bottom: 8px;
 }
 
 .what-will-you-get__block {
@@ -208,7 +224,7 @@ section.how-it-works .how-it-works__title {
     /* margin: 20px 19px 20px 19px; */
     border: 1px solid #004999;
     border-radius: 50px;
-    padding: 35px;
+    padding: 30px;
     text-align: left;
 }
 
@@ -234,19 +250,44 @@ section.how-it-works .how-it-works__title {
     margin-bottom: 8px;
 }
 
+.what-will-you-get__block h3 {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
 .what-will-you-get__block p {
-    font-size: 10px;
+    font-size: 20px;
     font-family: "Nunito Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100,
-        "YTLC" 500;
-    line-height: 12px;
-    margin-bottom: 8px;
+    font-weight: 300;
+}
+
+.what-will-you-get__block--one {
+    width: 605px;
+    margin: 0 auto;
+}
+
+.what-will-you-get__block--two {
+    width: 430px;
+}
+
+.what-will-you-get__block--three {
+    width: 488px;
+}
+
+.button-wrap {
+    margin-top: 24px;
+    font-size: 32px;
+    font-family: "Nunito", sans-serif;
+}
+
+.button-wrap a:hover {
+    background: #004a99b8;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .btn {
+    width: 280px;
     display: inline-block;
     background: #FF9500;
     color: white;
