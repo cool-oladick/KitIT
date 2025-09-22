@@ -472,7 +472,8 @@ section.how-it-works .how-it-works__title {
     }
 
     #block-how h2 {
-        font-size: 24px !important;
+        font-size: 20px !important;
+        font-weight: 600 !important;
     }
 
     .how-it-works__block img {
@@ -481,30 +482,37 @@ section.how-it-works .how-it-works__title {
 
     .how-it-works__block h3 {
         width: 300px;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 16px;
+        font-weight: 600 !important;
     }
 
     .how-it-works__block p {
         width: 271px;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .what-will-you-get__title {
-        font-size: 24px;
+        font-size: 20px;
+        font-weight: 600 !important;
+
     }
 
     .what-will-you-get__block h3 {
-        font-size: 20px;
+        font-size: 15px;
+        font-weight: 600 !important;
+
     }
 
     .what-will-you-get__block p {
-        font-size: 16px;
+        font-size: 10px;
+        font-weight: 400 !important;
+
     }
 
     .what-will-you-get__block {
-        margin: 0 auto;
-        width: 486px;
+        /* margin: 0 auto; */
+        width: 322px;
     }
 
     .container {
