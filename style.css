@@ -298,6 +298,32 @@ section.how-it-works .how-it-works__title {
     transition: 0.2s;
 }
 
+@media (max-width: 1200px) {
+    .navbar {
+        top: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .what-will-you-get__blocks {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .what-will-you-get__block {
+        margin: 0 auto;
+        width: 605px;
+    }
+}
+
+/* @media (max-width: 991px) {
+    .what-will-you-get__blocks {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+} */
+
 /* header.hero {
     width: 360px;
     height: 415px;
