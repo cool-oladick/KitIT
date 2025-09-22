@@ -290,7 +290,8 @@ section.how-it-works .how-it-works__title {
 .btn {
     width: 280px;
     display: inline-block;
-    background: #FF9500;
+    background: linear-gradient(180deg, #FFC266 0%, #FF9500 50%, #CC7700 100%);
+    /* background: #FF9500; */
     color: white;
     font-weight: bold;
     padding: 14px 28px;
