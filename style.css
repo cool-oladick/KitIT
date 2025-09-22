@@ -63,7 +63,8 @@ header {
 }
 
 .container {
-    padding-top: 180px;
+    padding-top: 130px;
+
 }
 
 .container-main-how-it-works {
@@ -75,7 +76,7 @@ header {
 }
 
 #h1-header {
-    min-width: 606px;
+    max-width: 606px;
     font-family: "Nunito", sans-serif;
     font-size: 60px;
     line-height: 55px;
@@ -83,7 +84,7 @@ header {
 }
 
 #h2-header {
-    min-width: 606px;
+    max-width: 606px;
     font-family: "Nunito", sans-serif;
     font-size: 35px;
     line-height: 35px;
@@ -91,7 +92,7 @@ header {
 }
 
 #p-header {
-    min-width: 511px;
+    max-width: 511px;
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     line-height: 25px;
@@ -342,7 +343,7 @@ section.how-it-works .how-it-works__title {
     }
 
     .btn-primary {
-        width: 200px;
+        max-width: 200px;
         height: 49px;
         font-size: 14px;
     }
@@ -365,6 +366,9 @@ section.how-it-works .how-it-works__title {
     #btn-header {
         width: 240px;
         font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #block-how h2 {
@@ -397,12 +401,145 @@ section.how-it-works .how-it-works__title {
     .what-will-you-get__block p {
         font-size: 16px;
     }
+
     .what-will-you-get__block {
         margin: 0 auto;
         width: 486px;
     }
-    #block-how {
+
+    .container {
         width: 100% !important;
+        border-radius: 0 !important;
+
+    }
+
+    #buttons-header {
+        width: auto;
+    }
+
+    .container {
+        margin: 0 !important;
+    }
+
+    #block-how {
+        margin-top: 38px !important;
+    }
+
+    #btn-header {
+        width: 150px;
+        height: 50px;
+        padding: 0;
+    }
+
+    #btn-header a {
+        font-size: 12px;
+        padding: 0;
+        line-height: 5px;
+    }
+
+    #buttons-header {
+        display: flex !important;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    #h1-header {
+        font-size: 24px;
+        padding: 0;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    #h2-header {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    #p-header {
+        font-size: 10px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    #btn-header {
+        width: 240px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #block-how h2 {
+        font-size: 24px !important;
+    }
+
+    .how-it-works__block img {
+        width: 60px;
+    }
+
+    .how-it-works__block h3 {
+        width: 300px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .how-it-works__block p {
+        width: 271px;
+        font-size: 12px;
+    }
+
+    .what-will-you-get__title {
+        font-size: 24px;
+    }
+
+    .what-will-you-get__block h3 {
+        font-size: 20px;
+    }
+
+    .what-will-you-get__block p {
+        font-size: 16px;
+    }
+
+    .what-will-you-get__block {
+        margin: 0 auto;
+        width: 486px;
+    }
+
+    .container {
+        width: 100% !important;
+        border-radius: 0 !important;
+
+    }
+
+    #buttons-header {
+        width: auto;
+    }
+
+    .container {
+        margin: 0 !important;
+    }
+
+    #block-how {
+        margin-top: 38px !important;
+    }
+
+    #btn-header {
+        width: 150px;
+        height: 50px;
+        padding: 0;
+    }
+
+    #btn-header a {
+        font-size: 12px;
+        padding: 0;
+        line-height: 5px;
+    }
+
+    #buttons-header {
+        display: flex !important;
+        justify-content: center;
     }
 }
 
