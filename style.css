@@ -2,17 +2,15 @@ body {
     padding: 0;
     margin: 0;
     min-height: 100vh;
-    background: radial-gradient(circle at center,
-            rgba(0, 122, 255, 0.3) 0%,
-            rgba(0, 122, 255, 0.6) 90%);
+    background: radial-gradient(circle at center, rgb(132 164 198) 0%, rgb(21 84 153 / 28%) 90%);
 }
 
 header {
-    background: url(./images/bg.png);
+    /* background: url(./images/bg.png); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 900px;
+    /* height: 900px; */
 }
 
 .bg-dark {
@@ -21,19 +19,16 @@ header {
 
 .navbar {
     position: fixed;
-    top: 45px;
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     max-width: 1150px;
     width: 100%;
-    /* чтобы работало ограничение */
     height: 90px;
-
     padding: 0 22px;
-    border-radius: 50px;
-
+    border-radius: 0 0 50px 50px;
     z-index: 1000;
+    top: 0; 
 }
 
 .btn-primary {
@@ -67,24 +62,28 @@ header {
 
 }
 
-/* .container-main-how-it-works {
-    max-width: 1150px;
-} */
+#header {
+    margin-top: 130px;
+}
 
-/* #width-header {
-    width: 540px;
-} */
+#width-header {
+    width: 1028px;
+}
 
 #h1-header {
-    max-width: 606px;
+    max-width: 1005px;
+    color: #004999;
     font-family: "Nunito", sans-serif;
-    font-size: 60px;
+    font-size: 55px;
     line-height: 55px;
     padding-bottom: 24px;
 }
 
 #h2-header {
-    max-width: 606px;
+    max-width: 912px;
+    text-align: center;
+    color: #007AFF;
+    margin: 0 auto;
     font-family: "Nunito", sans-serif;
     font-size: 35px;
     line-height: 35px;
@@ -92,15 +91,19 @@ header {
 }
 
 #p-header {
-    max-width: 511px;
+    max-width: 632px;
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     line-height: 25px;
     padding-bottom: 24px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #buttons-header {
     width: 555px;
+    margin: 0 auto;
+
 }
 
 #btn-header {
@@ -123,6 +126,7 @@ header {
 
 #block-how h2 {
     text-align: center;
+    color: #004999;
 }
 
 .what-will-you-get__blocks {
@@ -194,6 +198,7 @@ section.how-it-works .how-it-works__title {
     font-size: 24px;
     font-family: "Nunito", sans-serif;
     line-height: 30px;
+    color:#007AFF;
 }
 
 .how-it-works__block p {
@@ -213,6 +218,7 @@ section.how-it-works .how-it-works__title {
 
 .what-will-you-get__title {
     width: 100%;
+    color:#004999;
     display: flex;
     justify-content: center;
     padding-top: 22px;
@@ -227,6 +233,10 @@ section.how-it-works .how-it-works__title {
     border-radius: 50px;
     padding: 30px;
     text-align: left;
+}
+
+.what-will-you-get__block h3 {
+    color: #007AFF;
 }
 
 .what-will-you-get__block:nth-child(1) {
@@ -290,8 +300,8 @@ section.how-it-works .how-it-works__title {
 .btn {
     width: 280px;
     display: inline-block;
-    background: linear-gradient(180deg, #FFC266 0%, #FF9500 50%, #CC7700 100%);
-    /* background: #FF9500; */
+    /* back ground: linear-gradient(180deg, #FFC266 0%, #FF9500 50%, #CC7700 100%); */
+    background: #FF9500;
     color: white;
     font-weight: bold;
     padding: 14px 28px;
@@ -427,6 +437,7 @@ section.how-it-works .how-it-works__title {
         border-radius: 20px 20px 0 0 !important;
 
     }
+
     .container-main-how-it-works {
         margin: 0 auto !important;
         border-radius: 0 0 20px 20px !important;
