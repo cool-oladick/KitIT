@@ -28,7 +28,7 @@ header {
     padding: 0 22px;
     border-radius: 0 0 50px 50px;
     z-index: 1000;
-    top: 0; 
+    top: 0;
 }
 
 .btn-primary {
@@ -52,9 +52,16 @@ header {
 
 }
 
-.img-header {
+/* .img-header {
     width: 462px !important;
     height: 365px;
+} */
+.hero-img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    max-width: 100%;
+
 }
 
 .container {
@@ -75,7 +82,7 @@ header {
     color: #004999;
     font-family: "Nunito", sans-serif;
     font-size: 55px;
-    line-height: 55px;
+    line-height: 15px;
     padding-bottom: 24px;
 }
 
@@ -127,6 +134,18 @@ header {
 #block-how h2 {
     text-align: center;
     color: #004999;
+}
+
+.img-header {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.img-header-box img {
+    max-width: 194px;
 }
 
 .what-will-you-get__blocks {
@@ -198,7 +217,7 @@ section.how-it-works .how-it-works__title {
     font-size: 24px;
     font-family: "Nunito", sans-serif;
     line-height: 30px;
-    color:#007AFF;
+    color: #007AFF;
 }
 
 .how-it-works__block p {
@@ -218,7 +237,7 @@ section.how-it-works .how-it-works__title {
 
 .what-will-you-get__title {
     width: 100%;
-    color:#004999;
+    color: #004999;
     display: flex;
     justify-content: center;
     padding-top: 22px;
@@ -311,6 +330,10 @@ section.how-it-works .how-it-works__title {
 }
 
 @media (max-width: 1200px) {
+    #h1-header {
+        line-height: 55px;
+    }
+
     .navbar {
         top: 0;
         border-radius: 0;
@@ -340,6 +363,10 @@ section.how-it-works .how-it-works__title {
 @media (max-width: 991px) {
     .how-it-works__blocks {
         display: block;
+    }
+
+    .img-header-box img {
+        width: 136px;
     }
 }
 
@@ -459,9 +486,25 @@ section.how-it-works .how-it-works__title {
         display: flex !important;
         justify-content: center;
     }
+
+    .img-header-box img {
+        width: 90px;
+    }
 }
 
 @media (max-width: 576px) {
+    .img-header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .img-header-box {
+        text-align: center;
+    }
+    .img-header-box img {
+        width: 130px;
+    }
+
     #h1-header {
         font-size: 24px;
         padding: 0;
