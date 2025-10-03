@@ -366,11 +366,25 @@ footer hr {
     color: rgba(255, 255, 255, 0.5);
 }
 
-footer .container-blocks {
+footer .footer-top-block {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
+}
+
+.footer-bottom-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding-left: 33px;
+}
+
+footer a {
+    font-size: 10px;
+    text-decoration: none;
+    color: hsl(0, 0%, 50%);
 }
 
 @media (max-width: 1200px) {
@@ -407,6 +421,11 @@ footer .container-blocks {
 @media (max-width: 991px) {
     .how-it-works__blocks {
         display: block;
+    }
+
+    #header {
+        margin: 0 !important;
+        border-radius: 0 !important;
     }
 
     .img-header-box img {
