@@ -329,6 +329,50 @@ section.how-it-works .how-it-works__title {
     transition: 0.2s;
 }
 
+.footer-logo img {
+    width: 122px;
+}
+
+.footer-text {
+    width: 70px;
+    height: 68px;
+    color: #fff;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+div.footer-logo {
+    width: 205px;
+    padding-left: 55px;
+}
+
+div.footer__social {
+    width: 332px;
+    padding-top: 55px;
+}
+
+div.footer__contacts {
+    width: 250px;
+    padding-top: 55px;
+}
+
+.footer__social h4,
+.footer__contacts h4 {
+    font-size: 24px;
+    color: #fff;
+}
+
+footer hr {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer .container-blocks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
 @media (max-width: 1200px) {
     #h1-header {
         line-height: 55px;
@@ -459,7 +503,7 @@ section.how-it-works .how-it-works__title {
 
     }
 
-    .container-main-how-it-works {
+    .container-blocks {
         margin: 0 auto !important;
         border-radius: 0 0 20px 20px !important;
     }
@@ -492,9 +536,11 @@ section.how-it-works .how-it-works__title {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
+
     .img-header-box {
         text-align: center;
     }
+
     .img-header-box img {
         width: 130px;
     }
