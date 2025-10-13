@@ -55,7 +55,7 @@
             <form action="#" method="get">
                 <fieldset>
                     <div class="test">
-                        <h4>Крок 1: Вкажи свій клас</h4>
+                        <h4 class="h4test-title">Крок 1: Вкажи свій клас</h4>
                         <p>Перш ніж ми почнемо, вибери, у якому ти класі. Це дуже важливо для вибору правильної
                             програми.</p>
                         <input type="radio" name="space" value="test-1">
@@ -65,17 +65,18 @@
                         <input type="radio" name="space" value="test-3">
                         <label for="test-3">в) 8-11 клас</label>
                     </div>
-                    <div class="test">
-                        <h4>Крок 2: Пройди тест</h4>
-                        <p>Тепер дай відповіді на запитання, обираючи той варіант, який тобі найближчий. Не роздумуй
-                            занадто довго, перша думка — найвірніша!</p>
-                    </div>
+
                 </fieldset>
             </form>
             <form action="#" method="get">
                 <fieldset>
                     <div class="test">
-                        <h4>1. Ти дивишся фільм про супергероїв. Хто тебе захоплює найбільше?</h4>
+                        <h4 class="h4test-title">Крок 2: Пройди тест</h4>
+                        <p>Тепер дай відповіді на запитання, обираючи той варіант, який тобі найближчий. Не роздумуй
+                            занадто довго, перша думка — найвірніша!</p>
+                    </div>
+                    <div class="test">
+                        <h4 class="h4test-title">1. Ти дивишся фільм про супергероїв. Хто тебе захоплює найбільше?</h4>
                         <input type="radio" name="space" value="test-1">
                         <label for="test-1">а) Геніальний винахідник у своїй майстерні, що створює дивовижні гаджети (як
                             Тоні Старк).</label><br>
@@ -91,7 +92,7 @@
                         <label for="test-5">e) Сам супергерой, який комбінує всі навички, щоб вирішити проблему.</label>
                     </div>
                     <div class="test">
-                        <h4>2. У школі задали великий груповий проект. Що ти робитимеш з найбільшим ентузіазмом?</h4>
+                        <h4 class="h4test-title">2. У школі задали великий груповий проект. Що ти робитимеш з найбільшим ентузіазмом?</h4>
                         <input type="radio" name="space" value="test-6">
                         <label for="test-6">а) Створювати презентацію: підбирати шрифти, картинки, анімації, щоб
                             виглядало "вау!".</label><br>
@@ -109,21 +110,30 @@
                             нестандартні рішення.</label>
                     </div>
                     <div class="test">
-                        <h4>3. Ти натрапив на складну головоломку чи загадку. Твоя реакція?</h4>
+                        <h4 class="h4test-title">3. Ти натрапив на складну головоломку чи загадку. Твоя реакція?</h4>
                         <input type="radio" name="space" value="test-11">
-                        <label for="test-11">а) Спробую її візуалізувати: намалюю схему, щоб краще зрозуміти умову.</label><br>
+                        <label for="test-11">а) Спробую її візуалізувати: намалюю схему, щоб краще зрозуміти
+                            умову.</label><br>
                         <input type="radio" name="space" value="test-12">
-                        <label for="test-12">b) Розкладу її на маленькі логічні кроки і буду вирішувати послідовно. </label><br>
+                        <label for="test-12">b) Розкладу її на маленькі логічні кроки і буду вирішувати послідовно.
+                        </label><br>
                         <input type="radio" name="space" value="test-13">
-                        <label for="test-13"> c) Почну експериментувати, перебирати варіанти, поки не знайду робочий.</label><br>
+                        <label for="test-13"> c) Почну експериментувати, перебирати варіанти, поки не знайду
+                            робочий.</label><br>
                         <input type="radio" name="space" value="test-14">
-                        <label for="test-14">d) Обговорю її з друзями, щоб почути різні думки та прийти до рішення разом. </label><br>
+                        <label for="test-14">d) Обговорю її з друзями, щоб почути різні думки та прийти до рішення
+                            разом. </label><br>
                         <input type="radio" name="space" value="test-15">
-                        <label for="test-15">e) Буду пробувати різні підходи, навіть найдивніші, бо сам процес пошуку цікавіший за відповідь.</label>
+                        <label for="test-15">e) Буду пробувати різні підходи, навіть найдивніші, бо сам процес пошуку
+                            цікавіший за відповідь.</label>
                     </div>
                 </fieldset>
             </form>
         </section>
+        <div class="left-rightBtn">
+            <a href="#">Попередня</a>
+            <a href="#">Наступна</a>
+        </div>
     </div>
 </main>
 <footer>
@@ -145,15 +155,15 @@
                 <h4>Соцмережі </h4>
                 <hr>
                 <ul>
-                    <li><a href="#"><img src="./images/icons_instagram.png" alt="">Instagram</a></li>
-                    <li><a href="#"><img src="./images/logos_facebook.png" alt="">Facebook</a></li>
+                    <li><a href="#"><img src="./images/icons_instagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="./images/logos_facebook.png" alt=""></a></li>
                 </ul>
             </div>
             <div class="footer__contacts">
                 <h4>Пошта</h4>
                 <hr>
                 <ul>
-                    <li><a href="#"><img src="./images/gmail.png" alt=""> Gmail</a></li>
+                    <li><a href="#"><img src="./images/gmail.png" alt=""></a></li>
             </div>
         </div>
         <hr>

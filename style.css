@@ -412,7 +412,7 @@ main.page-test {
 }
 
 .h2test-title {
-    padding-top: 100px;
+    padding-top: 50px;
     max-width: 914px;
     font-size: 50px;
     font-family: 'Nunito';
@@ -422,8 +422,9 @@ main.page-test {
     color: #004999;
     line-height: 55px;
 }
+
 .h3test-title {
-    padding-top: 45px;
+    padding-top: 40px;
     max-width: 914px;
     font-size: 36px;
     font-family: 'Nunito';
@@ -434,15 +435,54 @@ main.page-test {
     line-height: 55px;
 }
 
+.h4test-title {
+    font-size: 32px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    color: #004999;
+    line-height: 36px;
+}
+
+form p {
+    font-size: 24px;
+    font-family: 'Nunito Sans';
+    line-height: 36px;
+}
+
 form {
     max-width: 900px;
     margin: 0 auto;
     border: 1px solid #004999;
     border-radius: 20px;
     padding: 20px;
+    margin-top: 40px;
 }
+
 .test {
     padding: 20px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.test label {
+    /* font-size: 16px; */
+    /* padding: 8px; */
+}
+
+.left-rightBtn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left-rightBtn a {
+    width: 412px;
+    height: 60px;
+    background: #FF9500;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
 }
 
 @media (max-width: 1200px) {
