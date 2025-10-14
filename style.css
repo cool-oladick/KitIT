@@ -29,7 +29,7 @@ header {
     left: 0;
     width: 0;
     height: 5px;
-    background: linear-gradient(to right, #004999 0%,#007AFF 100%);
+    background: linear-gradient(to right, #004999 0%, #007AFF 100%);
     z-index: 1001;
     animation-name: fill-progress;
     animation-timing-function: linear;
@@ -50,7 +50,7 @@ header {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
     max-width: 1150px;
     width: 100%;
     height: 90px;
@@ -58,6 +58,20 @@ header {
     border-radius: 0 0 50px 50px;
     z-index: 1000;
     top: 0;
+    opacity: 0;
+    animation: slideDown 1s ease-out forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
 }
 
 .btn-primary {
@@ -81,10 +95,47 @@ header {
 
 }
 
-/* .img-header {
-    width: 462px !important;
-    height: 365px;
-} */
+#header {
+    background: linear-gradient(270deg, rgb(255, 255, 255) 0%, #e3f0ff 100%);
+    /* backdrop-filter: blur(10px); */
+    max-width: 1150px;
+    border-radius: 20px;
+    background-size: 600% 600%;
+    background-repeat: no-repeat;
+    animation: slideUp 3s ease-out forwards, gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes slideUp {
+    30% {
+        opacity: 1;
+        transform: translateY(50px);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .hero-img {
     position: absolute;
     z-index: -1;
@@ -114,6 +165,9 @@ header {
     line-height: 15px;
     padding-bottom: 12px;
 }
+
+
+
 
 #h2-header {
     max-width: 912px;
@@ -175,6 +229,42 @@ header {
 
 .img-header-box img {
     max-width: 194px;
+
+}
+
+.img-header-box {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: moveUp 1s ease forwards;
+}
+
+
+.img-header-box:nth-child(1) {
+    animation-delay: 2.3s;
+}
+
+.img-header-box:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.img-header-box:nth-child(3) {
+    animation-delay: 2.1s;
+}
+
+.img-header-box:nth-child(4) {
+    animation-delay: 2.2s;
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .what-will-you-get__blocks {
@@ -210,14 +300,11 @@ section.how-it-works .how-it-works__title {
 }
 
 .how-it-works__block {
-    padding-bottom: 25px;
-}
-
-.how-it-works__block {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 25px;
 }
 
 .how-it-works__block img {
@@ -595,314 +682,318 @@ form {
         font-size: 20px;
         line-height: 32px;
     }
+}
 
-
-    @media (max-width: 770px) {
-        .navbar a img {
-            width: 50px;
-        }
-
-        .navbar-collapse a {
-            font-size: 14px;
-        }
-
-        .btn-primary {
-            max-width: 200px;
-            height: 49px;
-            font-size: 14px;
-        }
-
-        #h1-header {
-            font-size: 32px;
-            padding: 0;
-        }
-
-        #h2-header {
-            font-size: 24px;
-            line-height: 24px;
-            padding-bottom: 0;
-        }
-
-        #p-header {
-            font-size: 12px;
-        }
-
-        #btn-header {
-            width: 240px;
-            font-size: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #block-how h2 {
-            font-size: 24px !important;
-        }
-
-        .how-it-works__block img {
-            width: 60px;
-        }
-
-        .how-it-works__block h3 {
-            width: 300px;
-            font-size: 16px;
-            line-height: 16px;
-        }
-
-        .how-it-works__block p {
-            width: 271px;
-            font-size: 12px;
-        }
-
-        .what-will-you-get__title {
-            font-size: 24px;
-        }
-
-        .what-will-you-get__block h3 {
-            font-size: 20px;
-        }
-
-        .what-will-you-get__block p {
-            font-size: 16px;
-        }
-
-        .what-will-you-get__block {
-            width: 400px;
-        }
-
-        #buttons-header {
-            width: auto;
-        }
-
-        .container {
-            margin: 0 !important;
-        }
-
-        #block-how {
-            /* margin-top: 38px !important; */
-            margin: 0 auto !important;
-            border-radius: 20px 20px 0 0 !important;
-
-        }
-
-        .container-blocks {
-            margin: 0 auto !important;
-            border-radius: 0 !important;
-        }
-
-        #btn-header {
-            width: 150px;
-            height: 50px;
-            padding: 0;
-        }
-
-        #btn-header a {
-            font-size: 12px;
-            padding: 0;
-            line-height: 5px;
-        }
-
-        #buttons-header {
-            display: flex !important;
-            justify-content: center;
-        }
-
-        .img-header-box img {
-            width: 90px;
-        }
+@media (max-width: 770px) {
+    .navbar a img {
+        width: 50px;
     }
 
-    @media (max-width: 576px) {
-
-        .collapse {
-            margin-top: 40px;
-            padding: 20px;
-            background: #333;
-            border-radius: 20px;
-        }
-
-        .collapse a {
-            color: #fff;
-        }
-
-        .img-header {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-
-        .img-header-box {
-            text-align: center;
-        }
-
-        .img-header-box img {
-            width: 130px;
-        }
-
-        #h1-header {
-            font-size: 24px;
-            padding: 0;
-            text-align: left;
-            line-height: 30px;
-        }
-
-        #h2-header {
-            font-size: 16px;
-            line-height: 20px;
-            text-align: left;
-        }
-
-        #p-header {
-            font-size: 10px;
-            line-height: 20px;
-            text-align: left;
-        }
-
-        #btn-header {
-            width: 240px;
-            font-size: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #block-how h2 {
-            font-size: 20px !important;
-            font-weight: 600 !important;
-        }
-
-        .how-it-works__block img {
-            width: 60px;
-        }
-
-        .how-it-works__block h3 {
-            width: 300px;
-            font-size: 15px;
-            line-height: 16px;
-            font-weight: 600 !important;
-        }
-
-        .how-it-works__block p {
-            width: 271px;
-            font-size: 10px;
-        }
-
-        .what-will-you-get__title {
-            font-size: 20px;
-            font-weight: 600 !important;
-
-        }
-
-        .what-will-you-get__block h3 {
-            font-size: 15px;
-            font-weight: 600 !important;
-
-        }
-
-        .what-will-you-get__block p {
-            font-size: 10px;
-            font-weight: 400 !important;
-
-        }
-
-        .what-will-you-get__block {
-            /* margin: 0 auto; */
-            width: 322px;
-        }
-
-        .container {
-            width: 100% !important;
-            border-radius: 0 !important;
-
-        }
-
-        #buttons-header {
-            width: auto;
-        }
-
-        .container {
-            margin: 0 !important;
-        }
-
-        #block-how {
-            margin-top: 38px !important;
-        }
-
-        #btn-header {
-            width: 150px;
-            height: 50px;
-            padding: 0;
-        }
-
-        #btn-header a {
-            font-size: 12px;
-            padding: 0;
-            line-height: 5px;
-        }
-
-        #buttons-header {
-            display: flex !important;
-            justify-content: center;
-        }
-
-        .footer-logo img {
-            width: 100px;
-        }
-
-        .footer__social h4,
-        .footer__contacts h4 {
-            font-size: 20px;
-        }
-
-        form {
-            padding: 0px;
-        }
-
-        .left-rightBtn a {
-            width: 180px;
-            font-size: 18px;
-            height: 50px;
-        }
-
-        .h2test-title {
-            font-size: 32px;
-            line-height: 40px;
-        }
-
-        .h3test-title {
-            font-size: 28px;
-        }
-
-        .h4test-title {
-            font-size: 20px;
-        }
-
-        form p {
-            font-size: 16px;
-            line-height: 32px;
-        }
+    .navbar-collapse a {
+        font-size: 14px;
     }
 
-    @media (max-width:440px) {
-        .footer-logo img {
-            width: 50px;
-        }
-
-        .what-will-you-get__block {
-            width: 250px;
-        }
-
-        .left-rightBtn a {
-            width: 160px;
-            font-size: 18px;
-            height: 50px;
-        }
-
-        .test-block {
-            padding: 22px !important;
-        }
-
-        .h4test-title {
-            line-height: 26px;
-        }
+    .btn-primary {
+        max-width: 200px;
+        height: 49px;
+        font-size: 14px;
     }
+
+    #h1-header {
+        font-size: 32px;
+        padding: 0;
+    }
+
+    #h2-header {
+        font-size: 24px;
+        line-height: 24px;
+        padding-bottom: 0;
+    }
+
+    #p-header {
+        font-size: 12px;
+    }
+
+    #btn-header {
+        width: 240px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #block-how h2 {
+        font-size: 24px !important;
+    }
+
+    .how-it-works__block img {
+        width: 60px;
+    }
+
+    .how-it-works__block h3 {
+        width: 300px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .how-it-works__block p {
+        width: 271px;
+        font-size: 12px;
+    }
+
+    .what-will-you-get__title {
+        font-size: 24px;
+    }
+
+    .what-will-you-get__block h3 {
+        font-size: 20px;
+    }
+
+    .what-will-you-get__block p {
+        font-size: 16px;
+    }
+
+    .what-will-you-get__block {
+        width: 400px;
+    }
+
+    #buttons-header {
+        width: auto;
+    }
+
+    .container {
+        margin: 0 !important;
+    }
+
+    #block-how {
+        /* margin-top: 38px !important; */
+        margin: 0 auto !important;
+        border-radius: 20px 20px 0 0 !important;
+
+    }
+
+    .container-blocks {
+        margin: 0 auto !important;
+        border-radius: 0 !important;
+    }
+
+    #btn-header {
+        width: 150px;
+        height: 50px;
+        padding: 0;
+    }
+
+    #btn-header a {
+        font-size: 12px;
+        padding: 0;
+        line-height: 5px;
+    }
+
+    #buttons-header {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .img-header-box img {
+        width: 90px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .collapse {
+        margin-top: 40px;
+        padding: 20px;
+        background: #333;
+        border-radius: 20px;
+    }
+
+    .collapse a {
+        color: #fff;
+    }
+
+    .img-header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .img-header-box {
+        text-align: center;
+    }
+
+    .img-header-box img {
+        width: 130px;
+    }
+
+    #h1-header {
+        font-size: 24px;
+        padding: 0;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    #h2-header {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    #p-header {
+        font-size: 10px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    #btn-header {
+        width: 240px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #block-how h2 {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
+
+    .how-it-works__block img {
+        width: 60px;
+    }
+
+    .how-it-works__block h3 {
+        width: 300px;
+        font-size: 15px;
+        line-height: 16px;
+        font-weight: 600 !important;
+    }
+
+    .how-it-works__block p {
+        width: 271px;
+        font-size: 10px;
+    }
+
+    .what-will-you-get__title {
+        font-size: 20px;
+        font-weight: 600 !important;
+
+    }
+
+    .what-will-you-get__block h3 {
+        font-size: 15px;
+        font-weight: 600 !important;
+
+    }
+
+    .what-will-you-get__block p {
+        font-size: 10px;
+        font-weight: 400 !important;
+
+    }
+
+    .what-will-you-get__block {
+        /* margin: 0 auto; */
+        width: 322px;
+    }
+
+    .container {
+        width: 100% !important;
+        border-radius: 0 !important;
+
+    }
+
+    #buttons-header {
+        width: auto;
+    }
+
+    .container {
+        margin: 0 !important;
+    }
+
+    #block-how {
+        margin-top: 38px !important;
+    }
+
+    #btn-header {
+        width: 150px;
+        height: 50px;
+        padding: 0;
+    }
+
+    #btn-header a {
+        font-size: 12px;
+        padding: 0;
+        line-height: 5px;
+    }
+
+    #buttons-header {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .footer-logo img {
+        width: 100px;
+    }
+
+    .footer__social h4,
+    .footer__contacts h4 {
+        font-size: 20px;
+    }
+
+    main.page-test {
+        margin-top: 90px;
+    }
+
+    form {
+        padding: 0px;
+    }
+
+    .left-rightBtn a {
+        width: 180px;
+        font-size: 18px;
+        height: 50px;
+    }
+
+    .h2test-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .h3test-title {
+        font-size: 28px;
+    }
+
+    .h4test-title {
+        font-size: 20px;
+    }
+
+    form p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width:440px) {
+    .footer-logo img {
+        width: 50px;
+    }
+
+    .what-will-you-get__block {
+        width: 250px;
+    }
+
+    .left-rightBtn a {
+        width: 160px;
+        font-size: 18px;
+        height: 50px;
+    }
+
+    .test-block {
+        padding: 22px !important;
+    }
+
+    .h4test-title {
+        line-height: 26px;
+    }
+}
