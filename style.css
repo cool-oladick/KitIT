@@ -161,7 +161,7 @@ header {
     color: #004999;
     font-family: "Nunito", sans-serif;
     font-size: 55px;
-    line-height: 15px;
+    line-height: 35px;
     padding-bottom: 12px;
 }
 
@@ -174,8 +174,8 @@ header {
     color: #007AFF;
     margin: 0 auto;
     font-family: "Nunito", sans-serif;
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 32px;
+    line-height: 40px;
     padding-bottom: 12px;
 }
 
@@ -183,8 +183,8 @@ header {
     max-width: 632px;
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
-    line-height: 25px;
-    padding-bottom: 12px;
+    line-height: 30px;
+    padding-bottom: 20px;
     text-align: center;
     margin: 0 auto;
 }
