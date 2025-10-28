@@ -353,6 +353,11 @@ section.how-it-works .how-it-works__title {
     text-align: left;
 }
 
+.main-buttons {
+    position: relative;
+    top: 24px;
+}
+
 .what-will-you-get__block h3 {
     color: #007AFF;
 }
@@ -439,6 +444,16 @@ section.how-it-works .how-it-works__title {
     line-height: 25px;
     font-weight: 400;
     font-family: "Nunito Sans", sans-serif;
+}
+
+.footer-text-a {
+    background: linear-gradient(90deg, #007AFF, #00C6FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
 }
 
 div.footer-logo {
