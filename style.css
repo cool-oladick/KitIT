@@ -158,10 +158,13 @@ header {
 
 #h1-header {
     max-width: 1005px;
-    color: #004999;
+    /* color: #004999; */
+      background: linear-gradient(90deg, #007AFF, #00C6FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     font-family: "Nunito", sans-serif;
     font-size: 55px;
-    line-height: 35px;
+    line-height: 44px;
     padding-bottom: 12px;
 }
 
