@@ -1,10 +1,18 @@
 async function loadPage(page) {
-  const response = await fetch(`pages/${page}.html`);
-  const html = await response.text();
-  document.getElementById('content').innerHTML = html;
-}
+  try {
+    const response = await fetch(`pages/${page}.html`);
+    if (!response.ok) throw new Error("Сторінку не знайдено");
+    const html = await response.text();
+    document.getElementById('content').innerHTML = html;
 
-// Завантажуємо головну сторінку при запуску
-document.addEventListener("DOMContentLoaded", () => {
-  loadPage('home');
-});
+    // 🟡 Ховаємо головний контент, коли завантажуємо тест
+    if (page === 'test-list-1') {
+      document.getElementById('home-section').style.display = 'none';
+    } else {
+      document.getElementById('home-section').style.display = 'block';
+    }
+
+  } catch (error) {
+    document.getElementById('content').innerHTML = `<p>Помилка: ${error.message}</p>`;
+  }
+}
