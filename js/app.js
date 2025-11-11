@@ -8,6 +8,7 @@ async function loadPage(page) {
     // 🟡 Ховаємо головний контент, коли завантажуємо тест
     if (page === 'test-list-1') {
       document.getElementById('home-section').style.display = 'none';
+      document.getElementById('header').style.display = 'none';
     } else {
       document.getElementById('home-section').style.display = 'block';
     }
