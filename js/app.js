@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         "b-8-11": [
             { id: "Python_1", name: "Python (Базовий та Advanced)", link: "https://kitit.com.ua/python/", why: "Найпопулярніша мова світу." },
-            { id: "C_Plus_Plus", name: "Програмування C++", link: "https://kitit.com.ua/c-oop-obektno-orientirovannoe-programmirovanie-uroven-advanced/", why: "Фундаментальна мова." },
+            { id: "C_Plus_Plus", name: "Програмування C++", link: "https://kitit.com.ua/c/", why: "Фундаментальна мова." },
             { id: "Java", name: "Програмування Java", link: "https://kitit.com.ua/course/java/", why: "Мова корпорацій та Android." }
         ],
         "c-8-11": [
