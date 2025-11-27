@@ -62,70 +62,70 @@ document.addEventListener('DOMContentLoaded', () => {
     const courseRecommendations = {
         // === 2-4 КЛАСИ ===
         "a-2-4": [
-            { id: "Graphics", name: "Основи комп’ютерної графіки", link: "https://kitit.com.ua/course/computer-graphics/", why: "Малювання та дизайн на ПК." },
-            { id: "Photopea", name: "Графічний дизайн з Photopea", link: "https://kitit.com.ua/course/photopea/", why: "Створення професійної графіки." }
+            { id: "Graphics", name: "Основи комп’ютерної графіки", link: "https://kitit.com.ua/osnovy-komp-iuternoi-hrafiky-2/", why: "Малювання та дизайн на ПК." },
+            { id: "Photopea", name: "Графічний дизайн з Photopea", link: "https://kitit.com.ua/hrafichnyi-dyzain-z-photopea/", why: "Створення професійної графіки." }
         ],
         "b-2-4": [
-            { id: "Scratch", name: "Програмування у Scratch", link: "https://kitit.com.ua/course/scratch/", why: "Ідеальний старт для логіки." },
-            { id: "KODU", name: "KODU + Minecraft + Construct", link: "https://kitit.com.ua/course/kodu-minecraft/", why: "Програмуємо граючи." }
+            { id: "Scratch", name: "Програмування у Scratch", link: "https://kitit.com.ua/prohramuvannia-u-scratch/", why: "Ідеальний старт для логіки." },
+            { id: "KODU", name: "KODU + Minecraft + Construct", link: "https://kitit.com.ua/prohramuiemo-hraiuchy-razom-z-keisom-prohram-kodu-minecraft-construct3-roblox/", why: "Програмуємо граючи." }
         ],
         "c-2-4": [
-            { id: "Minecraft_1", name: "Minecraft: Програмування (блочне)", link: "https://kitit.com.ua/course/minecraft-education/", why: "Будуй світи кодом." },
-            { id: "Construct", name: "Construct 3", link: "https://kitit.com.ua/course/construct/", why: "Створення власних ігор." }
+            { id: "Minecraft_1", name: "Minecraft: Програмування (блочне)", link: "https://kitit.com.ua/prohramuvannia-v-minecraft-blochnoiu-movoiu/", why: "Будуй світи кодом." },
+            { id: "Construct", name: "Construct 3", link: "https://kitit.com.ua/construct-3/", why: "Створення власних ігор." }
         ],
         "d-2-4": [
-            { id: "Synfig", name: "2D векторна анімація (Synfig)", link: "https://kitit.com.ua/course/synfig-studio/", why: "Оживляй свої малюнки." },
-            { id: "Graphics", name: "Основи комп’ютерної графіки", link: "https://kitit.com.ua/course/computer-graphics/", why: "Творчість у цифрі." }
+            { id: "Synfig", name: "2D векторна анімація (Synfig)", link: "https://kitit.com.ua/stvorennia-2d-vektornoi-animatsii-u-synfig-studio/", why: "Оживляй свої малюнки." },
+            { id: "Graphics", name: "Основи комп’ютерної графіки", link: "https://kitit.com.ua/osnovy-komp-iuternoi-hrafiky-2/", why: "Творчість у цифрі." }
         ],
         "e-2-4": [
-            { id: "KODU", name: "Програмуємо граючи (Kodu+Minecraft)", link: "https://kitit.com.ua/course/kodu-minecraft/", why: "Спробуй різні технології." },
-            { id: "Thunkable", name: "Мобільні додатки в Thunkable", link: "https://kitit.com.ua/course/thunkable/", why: "Створи свій додаток." }
+            { id: "KODU", name: "Програмуємо граючи (Kodu+Minecraft)", link: "https://kitit.com.ua/prohramuiemo-hraiuchy-razom-z-keisom-prohram-kodu-minecraft-construct3-roblox/", why: "Спробуй різні технології." },
+            { id: "Thunkable", name: "Мобільні додатки в Thunkable", link: "https://kitit.com.ua/stvorennia-mobilnykh-dodatkiv-u-thunkable/", why: "Створи свій додаток." }
         ],
 
         // === 5-7 КЛАСИ ===
         "a-5-7": [
-            { id: "Blender", name: "3D моделювання у Blender", link: "https://kitit.com.ua/course/blender/", why: "Професійна 3D графіка." },
-            { id: "AI_Graphics", name: "AI & Graphics", link: "https://kitit.com.ua/course/ai-graphics/", why: "Сучасне мистецтво зі ШІ." },
-            { id: "Synfig", name: "2D векторна анімація", link: "https://kitit.com.ua/course/synfig-studio/", why: "Створення мультфільмів." }
+            { id: "Blender", name: "3D моделювання у Blender", link: "https://kitit.com.ua/3d-modeliuvannia-u-blender/", why: "Професійна 3D графіка." },
+            { id: "AI_Graphics", name: "AI & Graphics", link: "https://kitit.com.ua/ai-graphics/", why: "Сучасне мистецтво зі ШІ." },
+            { id: "Synfig", name: "2D векторна анімація", link: "https://kitit.com.ua/stvorennia-2d-vektornoi-animatsii-u-synfig-studio/", why: "Створення мультфільмів." }
         ],
         "b-5-7": [
-            { id: "Minecraft_Python", name: "Minecraft у Python", link: "https://kitit.com.ua/course/minecraft-python/", why: "Серйозне програмування у грі." },
-            { id: "Cloud_KT", name: "Хмарні комп’ютерні технології", link: "https://kitit.com.ua/course/cloud-technologies/", why: "Сучасні IT інструменти." }
+            { id: "Minecraft_Python", name: "Minecraft у Python", link: "https://kitit.com.ua/programmirovanie-v-minecraft-2/", why: "Серйозне програмування у грі." },
+            { id: "Cloud_KT", name: "Хмарні комп’ютерні технології", link: "https://kitit.com.ua/kompjuternye-tehnologii-i-algoritmizacija-kt-a/", why: "Сучасні IT інструменти." }
         ],
         "c-5-7": [
-            { id: "Roblox", name: "Програмування 3D ігор у Roblox", link: "https://kitit.com.ua/course/roblox-studio/", why: "Створи гру, в яку гратимуть друзі." },
-            { id: "Godot", name: "Створення ігор у Godot", link: "https://kitit.com.ua/course/godot/", why: "Потужний ігровий рушій." }
+            { id: "Roblox", name: "Програмування 3D ігор у Roblox", link: "https://kitit.com.ua/prohramuvannia-3d-ihor-u-roblox-studio/", why: "Створи гру, в яку гратимуть друзі." },
+            { id: "Godot", name: "Створення ігор у Godot", link: "https://kitit.com.ua/stvorennia-ihor-u-godot/", why: "Потужний ігровий рушій." }
         ],
         "d-5-7": [
-            { id: "Video", name: "Відеомонтаж", link: "https://kitit.com.ua/course/video-editing/", why: "Створюй контент для YouTube/TikTok." },
-            { id: "Thunkable", name: "Мобільні додатки (Thunkable)", link: "https://kitit.com.ua/course/thunkable/", why: "Додатки для телефону." }
+            { id: "Video", name: "Відеомонтаж", link: "https://kitit.com.ua/videomontazh/", why: "Створюй контент для YouTube/TikTok." },
+            { id: "Thunkable", name: "Мобільні додатки (Thunkable)", link: "https://kitit.com.ua/stvorennia-mobilnykh-dodatkiv-u-thunkable/", why: "Додатки для телефону." }
         ],
         "e-5-7": [
-            { id: "Godot", name: "Створення ігор у Godot", link: "https://kitit.com.ua/course/godot/", why: "Розробка ігор." },
-            { id: "Minecraft_Python", name: "Minecraft у Python", link: "https://kitit.com.ua/course/minecraft-python/", why: "Кодинг та гра." }
+            { id: "Godot", name: "Створення ігор у Godot", link: "https://kitit.com.ua/stvorennia-ihor-u-godot/", why: "Розробка ігор." },
+            { id: "Minecraft_Python", name: "Minecraft у Python", link: "https://kitit.com.ua/programmirovanie-v-minecraft-2/", why: "Кодинг та гра." }
         ],
 
         // === 8-11 КЛАСИ ===
         "a-8-11": [
-            { id: "UX_UI", name: "Основи UX/UI-дизайну", link: "https://kitit.com.ua/course/ux-ui-design/", why: "Проектування зручних сайтів." },
-            { id: "Small_web", name: "Основи Web-дизайну (Figma+HTML)", link: "https://kitit.com.ua/course/web-design-basic/", why: "Візуал та верстка." }
+            { id: "UX_UI", name: "Основи UX/UI-дизайну", link: "https://kitit.com.ua/osnovy-ux-ui-dyzaina/", why: "Проектування зручних сайтів." },
+            { id: "Small_web", name: "Основи Web-дизайну (Figma+HTML)", link: "https://kitit.com.ua/osnovy-web-dizajna-html5/", why: "Візуал та верстка." }
         ],
         "b-8-11": [
-            { id: "Python_1", name: "Python (Базовий та Advanced)", link: "https://kitit.com.ua/course/python/", why: "Найпопулярніша мова світу." },
-            { id: "C_Plus_Plus", name: "Програмування C++", link: "https://kitit.com.ua/course/cpp/", why: "Фундаментальна мова." },
+            { id: "Python_1", name: "Python (Базовий та Advanced)", link: "https://kitit.com.ua/python/", why: "Найпопулярніша мова світу." },
+            { id: "C_Plus_Plus", name: "Програмування C++", link: "https://kitit.com.ua/c-oop-obektno-orientirovannoe-programmirovanie-uroven-advanced/", why: "Фундаментальна мова." },
             { id: "Java", name: "Програмування Java", link: "https://kitit.com.ua/course/java/", why: "Мова корпорацій та Android." }
         ],
         "c-8-11": [
-            { id: "Web_1", name: "Front-end web розробка", link: "https://kitit.com.ua/course/frontend/", why: "Створення сайтів з нуля." },
-            { id: "C_Sharp", name: "C# .Net", link: "https://kitit.com.ua/course/c-sharp/", why: "Програмування для Windows та ігор." }
+            { id: "Web_1", name: "Front-end web розробка", link: "https://kitit.com.ua/front-end-web-razrabotka/", why: "Створення сайтів з нуля." },
+            { id: "C_Sharp", name: "C# .Net", link: "https://kitit.com.ua/c-net/", why: "Програмування для Windows та ігор." }
         ],
         "d-8-11": [
-            { id: "Small_web", name: "Основи Web-дизайну", link: "https://kitit.com.ua/course/web-design-basic/", why: "Творчість в інтернеті." },
-            { id: "Video", name: "Відеомонтаж (Advanced)", link: "https://kitit.com.ua/course/video-editing/", why: "Професійна робота з відео." }
+            { id: "Small_web", name: "Основи Web-дизайну", link: "https://kitit.com.ua/osnovy-web-dizajna-html5/", why: "Творчість в інтернеті." },
+            { id: "Video", name: "Відеомонтаж (Advanced)", link: "https://kitit.com.ua/videomontazh/", why: "Професійна робота з відео." }
         ],
         "e-8-11": [
-            { id: "Web_Dive", name: "Занурення у WEB-розробку", link: "https://kitit.com.ua/course/web-fullstack/", why: "Повний стек технологій." },
-            { id: "Web_Academy", name: "Web-академія", link: "https://kitit.com.ua/course/web-academy/", why: "Комплексне навчання." }
+            { id: "Web_Dive", name: "Занурення у WEB-розробку", link: "https://kitit.com.ua/veb-rozrobka-na-webflow/", why: "Повний стек технологій." },
+            { id: "Web_Academy", name: "Web-академія", link: "https://kitit.com.ua/web-akademija/", why: "Комплексне навчання." }
         ]
     };
 
