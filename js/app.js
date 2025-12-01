@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if(courses.length > 0) {
             coursesHTML = courses.map(c => `
-                <li class="list-group-item border-0 shadow-sm mb-3 rounded p-3 bg-light">
+                <li class="list-group-item border-0 shadow-sm mb-3 rounded p-3">
                     <h5 class="mb-2 text-primary fw-bold">${c.name}</h5>
                     <p class="mb-3 small text-muted">${c.why}</p>
                     
