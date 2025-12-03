@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     min-height: 100vh;
-    background-color: #F3F3F3;
+    background-color: #87D7FC;
     /* background: radial-gradient(circle at center, rgb(132 164 198) 0%, rgb(21 84 153 / 28%) 90%); */
 }
 
@@ -21,6 +21,61 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+}
+
+.waves {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    height: 120px;
+    /* висота хвиль */
+    pointer-events: none;
+    /* щоб не блокували кліки */
+
+    z-index: -1;
+    /* щоб було поверх фону */
+}
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .waves {
+        height: 60px;
+    }
 }
 
 .progres-bar {
@@ -219,11 +274,12 @@ header {
 .how-it-works__blocks {
     display: flex;
     justify-content: space-evenly;
-    align-items: baseline;
+    align-items: center;
+    gap: 20px;
 }
 
 #block-how {
-    background: linear-gradient(135deg, rgba(227, 240, 255, 0.5), rgba(255, 255, 255, 0.5));
+    background: linear-gradient(135deg, rgba(227, 240, 255, 0.5), rgba(255, 255, 255, 0.25));
     backdrop-filter: blur(12px);
     box-shadow:
         8px 8px 8px rgba(66, 133, 244, 0.15),
@@ -311,11 +367,22 @@ section.how-it-works .how-it-works__title {
 }
 
 .how-it-works__block {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-bottom: 25px;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px rgba(66, 133, 244, 0.15),
+        inset -2px -2px 2px rgba(255, 255, 255, 1),
+        inset 2px 2px 2px rgba(255, 255, 255, 1);
+    /* inset 0 -2px 2px rgba(255, 255, 255, 0.25), inset -2px 0 2px rgba(255, 255, 255, 0.15), inset 2px 0 4px rgba(255, 255, 255, 0.25); */
+    /* 12px 12px 12px rgba(0, 0, 0, 0.25); */
+    /* inset -10px -10px 8px rgba(255, 255, 255, 0.12),
+    inset 10px 10px 12px #a7a7a76c; */
 }
 
 .how-it-works__block img {
@@ -355,10 +422,13 @@ section.how-it-works .how-it-works__title {
 }
 
 .what-will-you-get__block {
-    border: 1px solid #004999;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+        box-shadow: 8px 8px 8px rgba(66, 133, 244, 0.15),
+        inset -2px -2px 2px rgba(255, 255, 255, 1),
+        inset 2px 2px 2px rgba(255, 255, 255, 1);
     border-radius: 50px;
     padding: 30px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
     text-align: left;
 }
 
@@ -731,10 +801,9 @@ footer .footer-top-block {
     .collapse {
         margin-top: 40px;
         padding: 20px;
-        background-color: rgba(255, 255, 255, 0.25);
+        background-color: rgba(255, 255, 255, 0.9);
         box-shadow: inset 0 -2px 2px rgba(255, 255, 255, 0.25), inset -2px 0 2px rgba(255, 255, 255, 0.15), inset 2px 0 4px rgba(255, 255, 255, 0.25);
         border-radius: 20px;
-        backdrop-filter: blur(12px);
     }
 
     .collapse a {
