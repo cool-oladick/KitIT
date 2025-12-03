@@ -800,7 +800,9 @@ footer .footer-top-block {
 @media (max-width: 576px) {
     .menuBut {
         margin: 0 auto;
-    } .collapse {
+    }
+
+    .collapse {
         margin-top: 40px;
         padding: 20px;
         background-color: rgba(255, 255, 255, 0.9);
@@ -828,22 +830,24 @@ footer .footer-top-block {
     }
 
     #h1-header {
-        font-size: 24px;
-        padding: 0;
+        font-size: 32px;
+        padding: 4px;
         text-align: left;
-        line-height: 30px;
+        line-height: 32px;
     }
 
     #h2-header {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 24px;
+        padding: 4px;
+        line-height: 24px;
         text-align: left;
     }
 
     #p-header {
         font-weight: 500;
-        font-size: 10px;
-        line-height: 20px;
+        font-size: 16px;
+        padding: 4px;
+        line-height: 24px;
         text-align: left;
     }
 
