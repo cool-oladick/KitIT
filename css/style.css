@@ -154,9 +154,7 @@ header {
 }
 
 #header {
-    background: linear-gradient(270deg, rgba(255, 255, 255, 0.25))
-        /*0%, #e3f0ff 25%)*/
-    ;
+    /* background: linear-gradient(270deg, rgba(255, 255, 255, 0.25)); */
     backdrop-filter: blur(12px);
     box-shadow:
         inset 0 2px 2px rgba(255, 255, 255, 0.5),
@@ -279,7 +277,7 @@ header {
 }
 
 #block-how {
-    background: linear-gradient(135deg, rgba(227, 240, 255, 0.5), rgba(255, 255, 255, 0.25));
+    /* background: linear-gradient(135deg, rgba(227, 240, 255, 0.5), rgba(255, 255, 255, 0.25)); */
     backdrop-filter: blur(12px);
     box-shadow:
         8px 8px 8px rgba(66, 133, 244, 0.15),
@@ -786,7 +784,7 @@ footer .footer-top-block {
     }
 
     .container {
-        margin: 0 !important;
+        margin: 0 auto !important;
     }
 
     #block-how {
@@ -921,9 +919,9 @@ footer .footer-top-block {
     }
 
     .container {
-        width: 100% !important;
+        /* width: 100% !important; */
         border-radius: 0 !important;
-        margin: 0 !important;
+        margin: 0 auto !important;
     }
 
     .buttons-header {
@@ -932,6 +930,7 @@ footer .footer-top-block {
 
     #block-how {
         margin-top: 38px !important;
+        border-radius: 24px 24px 0 0 !important;
     }
 
     .btn-header {
@@ -962,6 +961,10 @@ footer .footer-top-block {
 
     form {
         padding: 0px;
+    }
+
+    .how-it-works__block {
+        max-width: 280px;
     }
 }
 
