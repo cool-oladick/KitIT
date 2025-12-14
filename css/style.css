@@ -29,7 +29,7 @@ header {
     left: 0;
     width: 100%;
 
-    height: 120px;
+    height: 280px;
     /* висота хвиль */
     pointer-events: none;
     /* щоб не блокували кліки */
@@ -148,9 +148,13 @@ header {
 .nav-link {
     font-size: 20px;
     /* mix-blend-mode: difference; */
-    color: #333;
+    color: #004999;
     font-weight: bold;
     font-family: "Nunito", sans-serif;
+}
+
+.nav-link:hover {
+    color: #d1e7ff;
 }
 
 #header {
@@ -202,7 +206,7 @@ header {
 
 .hero-img {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     top: 0;
     max-width: 100%;
 }
@@ -212,18 +216,18 @@ header {
 }
 
 #width-header {
-    width: 1028px;
+    width: 1080px;
 }
 
 #h1-header {
-    max-width: 1005px;
+    max-width: 1024px;
     /* background: linear-gradient(90deg, #007AFF, #00C6FF); */
     background-color: #004999;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Nunito", sans-serif;
-    font-size: 55px;
-    line-height: 44px;
+    font-size: 56px;
+    line-height: 100%;
     padding-bottom: 24px;
 }
 
@@ -343,6 +347,19 @@ header {
     margin-top: 30px;
 }
 
+.what-will-you-get__blocks article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .what-will-you-get__blocks article h3{
+    display: block;
+}
+.what-will-you-get__blocks article p{
+    display: block;
+} */
+
 section.what-will-you-get {
     max-width: 1000px;
     margin: 0 auto;
@@ -365,6 +382,8 @@ section.how-it-works .how-it-works__title {
 }
 
 .how-it-works__block {
+    display: flex;
+    justify-content: center;
     height: 300px;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(12px);
@@ -392,11 +411,11 @@ section.how-it-works .how-it-works__title {
     max-width: 300px;
     display: flex;
     justify-content: center;
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Nunito Sans", sans-serif;
-    line-height: 20px;
+    line-height: 24px;
     margin-bottom: 25px;
-    font-weight: light;
+    font-weight: 500;
 }
 
 .how-it-works__block h3 {
@@ -526,7 +545,7 @@ footer {
 }
 
 .footer-text-a {
-    background: linear-gradient(90deg, #007AFF, #00C6FF);
+    background: linear-gradient(90deg, #004289, #00acdd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 20px;
@@ -566,7 +585,7 @@ div.footer__social {
 footer a {
     text-decoration: none;
     font-family: "Nunito Sans", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     text-decoration: none;
     color: #333;
 }
@@ -634,7 +653,6 @@ footer .footer-top-block {
 
     .container-blocks {
         max-width: 90% !important;
-        border-radius: 24px;
     }
 
     #h1-header {
@@ -748,7 +766,7 @@ footer .footer-top-block {
     }
 
     .how-it-works__block img {
-        width: 60px;
+        width: 64px;
     }
 
     .how-it-works__block h3 {
@@ -759,7 +777,7 @@ footer .footer-top-block {
 
     .how-it-works__block p {
         width: 271px;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .what-will-you-get__title {
@@ -775,7 +793,7 @@ footer .footer-top-block {
     }
 
     .what-will-you-get__block {
-        width: 400px;
+        width: 500px;
     }
 
     /* Виправлено ID на Class */
@@ -783,18 +801,11 @@ footer .footer-top-block {
         width: auto;
     }
 
-    .container {
-        margin: 0 auto !important;
-    }
-
     #block-how {
         margin: 0 auto !important;
         border-radius: 0 !important;
-    }
-
-    .container-blocks {
-        margin: 0 auto !important;
-        border-radius: 0 !important;
+        margin-top: 36px !important;
+        border-radius: 24px !important;
     }
 
     /* Стилі кнопок адаптивні */
@@ -879,58 +890,63 @@ footer .footer-top-block {
     }
 
     #block-how h2 {
-        font-size: 20px !important;
+        font-size: 28px !important;
         font-weight: 600 !important;
+        line-height: 150%;
     }
 
     .how-it-works__block img {
-        width: 60px;
+        width: 56px;
     }
 
     .how-it-works__block h3 {
-        width: 300px;
-        font-size: 15px;
-        line-height: 16px;
+        width: auto;
+        font-size: 20px;
+        line-height: 150%;
         font-weight: 600 !important;
+        text-align: left;
+        margin: 0;
     }
 
     .how-it-works__block p {
         width: 271px;
-        font-size: 10px;
+        font-size: 16px;
+        line-height: 150%;
+        padding: 0 12px;
+        text-align: left;
+    }
+
+    .how-it-works__block p br {
+        display: none;
     }
 
     .what-will-you-get__title {
-        font-size: 20px;
+        font-size: 28px;
         font-weight: 600 !important;
+        line-height: 150%;
+        padding: 0;
+        margin: 0;
     }
 
     .what-will-you-get__block h3 {
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 600 !important;
+        line-height: 150%;
     }
 
     .what-will-you-get__block p {
-        font-size: 10px;
+        font-size: 16px;
         font-weight: 400 !important;
+        margin: 0;
+        line-height: 150%;
     }
 
     .what-will-you-get__block {
         width: 322px;
     }
 
-    .container {
-        /* width: 100% !important; */
-        border-radius: 0 !important;
-        margin: 0 auto !important;
-    }
-
     .buttons-header {
         width: auto;
-    }
-
-    #block-how {
-        margin-top: 38px !important;
-        border-radius: 24px 24px 0 0 !important;
     }
 
     .btn-header {
@@ -974,6 +990,6 @@ footer .footer-top-block {
     }
 
     .what-will-you-get__block {
-        width: 250px;
+        width: 272px;
     }
 }
