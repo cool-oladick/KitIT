@@ -415,12 +415,13 @@ section.how-it-works .how-it-works__title {
     font-family: "Nunito Sans", sans-serif;
     line-height: 24px;
     margin-bottom: 25px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .how-it-works__block h3 {
     font-size: 24px;
     font-family: "Nunito", sans-serif;
+    font-weight: 500;
     line-height: 30px;
     color: #007AFF;
 }
@@ -458,10 +459,11 @@ section.how-it-works .how-it-works__title {
 .what-will-you-get__block h3 {
     color: #007AFF;
     font-size: 28px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 25px;
     font-family: "Nunito", sans-serif;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .what-will-you-get__block:nth-child(1) {
@@ -479,7 +481,7 @@ section.how-it-works .how-it-works__title {
 .what-will-you-get__block p {
     font-size: 20px;
     font-family: "Nunito Sans", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .what-will-you-get__block--one {
@@ -614,6 +616,9 @@ div.footer__contacts {
 
 footer hr {
     color: rgba(255, 255, 255, 0.5);
+}
+.hr-bott {
+    margin-top: 56px;
 }
 
 footer .footer-top-block {
@@ -792,6 +797,7 @@ footer .footer-top-block {
 
     .what-will-you-get__block h3 {
         font-size: 20px;
+        text-align: left;
     }
 
     .what-will-you-get__block p {
@@ -974,7 +980,7 @@ footer .footer-top-block {
 
     .footer__social h4,
     .footer__contacts h4 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     main.page-test {
@@ -993,6 +999,15 @@ footer .footer-top-block {
     }
     .button-main {
         margin: 24px;
+    }
+    .footer-text-a {
+    font-size: 16px;
+    }
+    .footer-text {
+        font-size: 16px;
+    }
+    .hr-bott {
+        margin-top: 32px;
     }
 }
 
