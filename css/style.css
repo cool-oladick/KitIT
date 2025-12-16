@@ -239,7 +239,7 @@ header {
     font-family: "Nunito", sans-serif;
     font-size: 32px;
     /* line-height: 40px; */
-    padding-bottom: 24px;
+    padding-bottom: 32px;
 }
 
 #p-header {
@@ -278,6 +278,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
+    margin-top: 30px;
 }
 
 #block-how {
@@ -569,12 +570,22 @@ footer h4 {
     font-family: "Nunito", sans-serif;
 }
 
-div.footer__social {
-    width: 332px;
-    padding-top: 55px;
+.footer__right {
+    display: flex;
+    gap: 8em;
 }
 
-.footer__social ul,
+.footer__social {
+    padding-top: 55px;
+    flex: 1 1 300px;
+}
+
+.footer__contacts {
+    padding-top: 55px;
+    flex: 1 1 220px;
+}
+
+.footer__right .footer__social ul,
 .footer__contacts ul {
     display: flex;
     justify-content: flex-start;
@@ -603,10 +614,6 @@ footer a {
     margin: 0 auto;
 }
 
-div.footer__contacts {
-    width: 250px;
-    padding-top: 55px;
-}
 
 .footer__social h4,
 .footer__contacts h4 {
@@ -617,6 +624,7 @@ div.footer__contacts {
 footer hr {
     color: rgba(255, 255, 255, 0.5);
 }
+
 .hr-bott {
     margin-top: 56px;
 }
@@ -624,7 +632,7 @@ footer hr {
 footer .footer-top-block {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: normal;
     gap: 2rem;
 }
 
@@ -652,6 +660,11 @@ footer .footer-top-block {
 
 .btn-outline-primary {
     height: 80px;
+}
+
+.footer__social li a img,
+.footer__contacts li a img {
+    width: 32px;
 }
 
 /* Медіа запити */
@@ -836,6 +849,14 @@ footer .footer-top-block {
     .img-header-box img {
         width: 90px;
     }
+
+    .footer__right {
+        gap: 4em;
+    }
+
+    footer .footer-top-block {
+        align-items: normal;
+    }
 }
 
 @media (max-width: 576px) {
@@ -993,20 +1014,59 @@ footer .footer-top-block {
     .how-it-works__block {
         max-width: 280px;
     }
+
     .container-blocks {
         padding: 24px !important;
     }
+
     .button-main {
         margin: 24px;
     }
+
     .footer-text-a {
-    font-size: 16px;
+        font-size: 16px;
     }
+
     .footer-text {
         font-size: 16px;
     }
+
     .hr-bott {
         margin-top: 32px;
+    }
+
+    .footer__social li a img,
+    .footer__contacts li a img {
+        width: 24px;
+    }
+
+    div.footer-logo {
+        width: 320px;
+        display: flex;
+        gap: 24px;
+    }
+
+    .footer-text {
+        width: 170px;
+    }
+
+    div.footer__social,
+    div.footer__contacts {
+        padding-top: 12px;
+    }
+
+    footer .footer-top-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__right {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.footer-logo {
+        align-items: flex-end;
     }
 }
 
@@ -1017,5 +1077,9 @@ footer .footer-top-block {
 
     .what-will-you-get__block {
         width: 272px;
+    }
+
+    div.footer-logo {
+        align-items: self-start;
     }
 }
