@@ -264,6 +264,8 @@ header {
 /* Виправлено ID на Class */
 .btn-header {
     width: 280px;
+    height: auto;
+    padding: 16px;
     font-size: 15px;
     font-family: "Nunito", sans-serif;
 }
@@ -425,6 +427,7 @@ section.how-it-works .how-it-works__title {
     font-weight: 500;
     line-height: 30px;
     color: #007AFF;
+    margin: 0;
 }
 
 .how-it-works__block--two h3 {
@@ -1058,6 +1061,7 @@ footer .footer-top-block {
     footer .footer-top-block {
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
 
     .footer__right {
