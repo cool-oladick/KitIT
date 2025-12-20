@@ -608,7 +608,8 @@ footer a {
     font-family: "Nunito Sans", sans-serif;
     font-size: 12px;
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
+    line-height: 120%;
 }
 
 .footer__social img,
