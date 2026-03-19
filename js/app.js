@@ -222,8 +222,8 @@ const courseRecommendations = {
                         
                         <!-- Кнопка завантаження сертифікату -->
                         <!-- Передбачається, що файл лежить у папці certificates/ та має назву ID.pdf -->
-                        <a href="./certificates/${c.id}.pdf" download="Certificate_${c.id}.pdf" class="btn btn-sm btn-outline-success px-3" style="border-radius: 20px;">
-                            📥 Отримати сертифікат (-20%)
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeW9Px0vy6_bzWvNvA-WbuN_UpDiloBjmqCbzB-grOatG1xWw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" download="Certificate_${c.id}.pdf" class="btn btn-sm btn-outline-success px-3" style="border-radius: 20px;">
+                            📥 Зареєструватись (-20%)
                         </a>
                     </div>
                 </li>
