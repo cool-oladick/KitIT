@@ -9,11 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const answerButtons = document.getElementById('answer-buttons');
     const resultContent = document.getElementById('result-content');
 
+    // НОВІ ЕЛЕМЕНТИ (КРОК 2)
+    const leadFormContainer = document.getElementById('lead-form-container');
+    const finalCtaContainer = document.getElementById('final-cta-container');
+    const leadForm = document.getElementById('lead-form');
+    const tgBotLink = document.getElementById('tg-bot-link');
+    const formLoader = document.getElementById('form-loader');
+
     // Змінні стану
     let allQuestions = [];
     let currentQuestionIndex = 0;
     let userScores = { "a": 0, "b": 0, "c": 0, "d": 0, "e": 0 };
     let userClass = ""; 
+    let currentArchetype = null;
+    let recommendedCourses = [];
 
     // Слухачі подій
     const startButtons = document.querySelectorAll('.start-btn');
@@ -135,6 +144,8 @@ const courseRecommendations = {
         startScreen.classList.add('d-none');
         resultsScreen.classList.add('d-none');
         quizScreen.classList.remove('d-none');
+        leadFormContainer.classList.add('d-none');
+        finalCtaContainer.classList.add('d-none');
         
         localStorage.clear();
         userScores = { "a": 0, "b": 0, "c": 0, "d": 0, "e": 0 };
@@ -204,7 +215,9 @@ const courseRecommendations = {
         }
 
         const arch = archetypeData[winner];
+        currentArchetype = arch;
         const courses = courseRecommendations[`${winner}-${userClass}`] || [];
+        recommendedCourses = courses;
         
         let coursesHTML = "";
         
@@ -218,12 +231,6 @@ const courseRecommendations = {
                         <!-- Кнопка переходу на сайт -->
                         <a href="${c.link}" target="_blank" class="btn btn-sm btn-primary px-3" style="border-radius: 20px;">
                             Детальніше про курс
-                        </a>
-                        
-                        <!-- Кнопка завантаження сертифікату -->
-                        <!-- Передбачається, що файл лежить у папці certificates/ та має назву ID.pdf -->
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeW9Px0vy6_bzWvNvA-WbuN_UpDiloBjmqCbzB-grOatG1xWw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" download="Certificate_${c.id}.pdf" class="btn btn-sm btn-outline-success px-3" style="border-radius: 20px;">
-                            📥 Зареєструватись (-20%)
                         </a>
                     </div>
                 </li>
@@ -244,11 +251,18 @@ const courseRecommendations = {
                 ${coursesHTML}
             </ul>
         `;
+
+        // Показуємо форму збору лідів
+        leadFormContainer.classList.remove('d-none');
+        finalCtaContainer.classList.add('d-none');
     }
 
     function restartQuiz() {
         resultsScreen.classList.add('d-none');
         quizScreen.classList.add('d-none');
         startScreen.classList.remove('d-none');
+        leadFormContainer.classList.add('d-none');
+        finalCtaContainer.classList.add('d-none');
+        leadForm.reset();
     }
 });

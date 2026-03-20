@@ -145,8 +145,6 @@
             </div>
         </div>
     </div>
-
-    <!-- ЕКРАН РЕЗУЛЬТАТІВ -->
     <div id="results-screen" class="d-none">
         <div class="container my-5">
             <div class="row justify-content-center">
@@ -156,6 +154,70 @@
     box-shadow: inset 0 -2px 2px rgba(255, 255, 255, 0.25), inset -2px 0 2px rgba(255, 255, 255, 0.15), inset 2px 0 4px rgba(255, 255, 255, 0.25);">
                         <div class="card-body p-4 p-md-5">
                             <div id="result-content"></div>
+
+                            <!-- НОВА ФОРМА ЗБОРУ ЛІДІВ (КРОК 2) -->
+                            <div id="lead-form-container" class="mt-4 d-none border-top pt-4">
+                                <h4 class="text-center mb-4" style="color: #004999; font-family: 'Nunito', sans-serif;">
+                                    Заповни форму, щоб отримати сертифікат зі знижкою та посилання на Telegram-бот
+                                </h4>
+                                <form id="lead-form">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="firstName"
+                                                    placeholder="Ім'я" required>
+                                                <label for="firstName">Ім'я</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="lastName"
+                                                    placeholder="Прізвище" required>
+                                                <label for="lastName">Прізвище</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="contact"
+                                                    placeholder="Телефон / Telegram" required>
+                                                <label for="contact">Телефон / Telegram</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="number" class="form-control" id="age" placeholder="Вік"
+                                                    required>
+                                                <label for="age">Вік</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <button type="submit" id="submit-lead-btn" class="btn btn-primary btn-lg w-100">
+                                            Відправити та отримати доступ
+                                        </button>
+                                        <!-- Індикатор завантаження -->
+                                        <div id="form-loader" class="mt-3 d-none">
+                                            <div class="spinner-border text-primary" role="status">
+                                                <span class="visually-hidden">Завантаження...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- ФІНАЛЬНИЙ CTA (КРОК 4) -->
+                            <div id="final-cta-container" class="mt-4 d-none text-center border-top pt-4">
+                                <h4 class="mb-4" style="color: #004999; font-family: 'Nunito', sans-serif;">Чудово!
+                                    Тепер ти можеш отримати свій сертифікат:</h4>
+                                <a id="tg-bot-link" href="#" target="_blank"
+                                    class="btn btn-success btn-lg px-5 py-3 shadow-lg"
+                                    style="border-radius: 30px; font-size: 1.2rem; background-color: #0088cc; border: none;">
+                                    <img src="./images/tg.png" alt="TG"
+                                        style="width: 30px; margin-right: 10px; filter: brightness(0) invert(1);">
+                                    Отримати сертифікат у Telegram
+                                </a>
+                            </div>
+
                             <hr class="my-4">
                             <div class="text-center">
                                 <button id="restart-btn" class="btn btn-primary btn-lg">Пройти знову</button>
@@ -166,6 +228,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- FOOTER (Глобальний) -->
     <footer>

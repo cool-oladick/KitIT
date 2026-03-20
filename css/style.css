@@ -646,6 +646,12 @@ footer .footer-top-block {
     align-items: center;
 }
 
+.disclaimer {
+    font-size: 12px;
+    color: #004186;
+    opacity: o.6;
+}
+
 .copyright,
 .PrivacyPolicy {
     margin-right: 20px;
@@ -1084,7 +1090,63 @@ footer .footer-top-block {
         width: 272px;
     }
 
+
     div.footer-logo {
         align-items: self-start;
+    }
+}
+
+/* СТИЛІ ДЛЯ ФОРМИ ЗБОРУ ЛІДІВ (КРОК 2) */
+#lead-form-container {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.form-floating > .form-control {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    color: #004999;
+}
+
+.form-floating > .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: #007AFF;
+    box-shadow: 0 0 0 0.25rem rgba(0, 122, 255, 0.25);
+}
+
+.form-floating > label {
+    color: #004999;
+}
+
+#tg-bot-link {
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tg-bot-link:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 136, 204, 0.4) !important;
+    background-color: #0077b5 !important;
+}
+
+#form-loader .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (max-width: 576px) {
+    #tg-bot-link {
+        font-size: 1rem;
+        padding: 12px 24px !important;
+    }
+    
+    #tg-bot-link img {
+        width: 24px !important;
     }
 }
